@@ -1,17 +1,17 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
-    rclone_config: "ENCRYPTED[cd748227cb60043e7066e426e166988ff5b0fb70341bcb4f661b5c255f19e90f6cb144de4ffdfdd18f201b0028a59b3a]"
-    CHATID: "ENCRYPTED[f74b235c319799d352465933e4171d71162267a08744c81a8c3273a4039aeaeb210ff2e5670df6e22a7e29ed70315f57]"
-    API_BOT: "ENCRYPTED[cb5d10e8b70521505e4141579d4b4042ab702ffba57d0e50051b9c5b7d93c37aa62c914add33fdaf8138e602ddbdbde9]"
+    rclone_config: "ENCRYPTED[332ff46ee7092de3c120a9f44eaa4b7a980046f3cdaabb607172c73fdc7cbbb25b961935e14eb9efdb67fdc24cb5e6d0]"
+    CHATID: "ENCRYPTED[7bbad666b9f82739306e9e894632462f93e0a9df187bf7f8070aa7b16819404ca6ae454f26245d99ce71aa56a7d8a228]"
+    API_BOT: "ENCRYPTED[3db75af810d60ffaffdcf4e74480cb878ccd3c00607b3f2a5bdcc6e6e92509911aad2d1c2be8c726f943ac0041e0fbfd]"
 
 task:
-    name: ItsVixano
-    timeout_in: 120m
+    name: ManoharSingh
+    timeout_in: 240m
     container:
       image: apon77/aosp:latest
-      cpu: 16
-      memory: 24G
+      cpu: 8
+      memory: 30G
     download_ccache_background_script:
       - ./download_ccache
     sync_script:
