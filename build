@@ -35,7 +35,7 @@ make_metalava(){
 }
 
 make_rom(){
-	tg_post_msg "<b>Crdroidandroid CI Build Triggered for whyred</b>" "$CHATID"
+	tg_post_msg "<b>Crdroidandroid CI Build Triggered for Rolex/Riva</b>" "$CHATID"
 	mka bacon -j8
 	if [ -f out/target/product/rolex/*zip ]; then
 		zip=$(up out/target/product/rolex/*zip)
@@ -43,7 +43,7 @@ make_rom(){
 		echo "$zip"
 		tg_post_msg "<b>Build Completed</b>%0A%0A<b>Link : </b> <code>"$zip"</code>" "$CHATID"
 	else
-		tg_post_msg "<b>Build Failed, check cirrus console</b>" "$CHATID"
+		tg_post_msg "<b>OMG! Build Failed, check cirrus console</b>" "$CHATID"
 	fi
 }
 

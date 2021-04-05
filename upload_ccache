@@ -3,8 +3,8 @@
 cd /tmp
 
 # Compress function with pigz for faster compression
-com () 
-{ 
+com ()
+{
     tar --use-compress-program="pigz -k -$2 " -cf cr_$1.tar.gz $1
 }
 
